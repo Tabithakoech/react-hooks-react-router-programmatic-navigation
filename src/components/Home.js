@@ -2,7 +2,7 @@ import React from "react";
 import { Redirect } from "react-router-dom";
 
 function Home({ isLoggedIn }) {
-  if (!isSignedIn) return <Redirect to="/login" />;
+  if (!isLoggedIn) return <Redirect to="/login" />;
 
   return (
     <div>
